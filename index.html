@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+
+    a {
+      margin: 2rem;
+      padding: 1rem;
+      border: solid 3px green;
+    }
+
+    a:hover {
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+
+    ul {
+      background-color: yellow;
+      list-style-type: square;
+    }
+
+    img {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      width: 300px;
+      height: auto;
+      margin-top: 120px;
+      z-index: -1; 
+    }
+
+    h1, p {
+      position: relative;
+      z-index: 1; 
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-left: 60px; 
+    }
+
+    p {
+      margin-left: 60px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <br><br>
+  <a>This is a link</a>
+  <br><br>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Coca Cola</li>
+  </ul>
+  
+  <img src="mountains-8567074_1920.jpg" alt="Mountain">
+
+  <h1>This is a heading</h1>
+  <p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+  <br><br>
+</body>
+</html>
